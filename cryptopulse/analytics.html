@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CryptoPulse — Analytics</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand">
+          <div class="logo-ring"><span class="logo-letter">C</span></div>
+          <div>
+            <p class="brand-name">CryptoPulse</p>
+            <span class="brand-tag">Real-time crypto intelligence</span>
+          </div>
+        </div>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="dashboard.html">Dashboard</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="analytics.html">Analytics</a>
+        </nav>
+        <div class="nav-actions">
+          <button class="outline-btn">Sign In</button>
+          <button class="primary-btn">Get Started</button>
+        </div>
+      </header>
+
+      <main>
+        <section class="section-grid">
+          <div class="section-header">
+            <div>
+              <h2>Analytics Insights</h2>
+              <p>Visualize performance, risk, and market momentum.</p>
+            </div>
+            <button class="secondary-btn">Download Report</button>
+          </div>
+
+          <div class="analytics-grid">
+            <article class="analytics-card">
+              <span class="card-title">Volume Heatmap</span>
+              <div class="heatmap-grid">
+                <span></span><span></span><span></span><span></span><span></span>
+                <span></span><span class="active"></span><span class="active"></span><span></span><span></span>
+                <span></span><span></span><span class="active"></span><span></span><span></span>
+                <span class="active"></span><span></span><span></span><span class="active"></span><span></span>
+              </div>
+            </article>
+            <article class="analytics-card accent-card">
+              <span class="card-title">Sentiment Pulse</span>
+              <canvas id="sentimentChart"></canvas>
+            </article>
+            <article class="analytics-card">
+              <span class="card-title">Performance Score</span>
+              <div class="score-ring">
+                <div class="score-value">89</div>
+                <span>Strong portfolio health</span>
+              </div>
+            </article>
+            <article class="analytics-card">
+              <span class="card-title">Risk Signals</span>
+              <ul class="signal-list">
+                <li>Macro volatility warning</li>
+                <li>Liquidity remains high</li>
+                <li>Rebalance opportunity in altcoins</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>

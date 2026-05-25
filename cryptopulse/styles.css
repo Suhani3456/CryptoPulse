@@ -417,6 +417,15 @@ a.outline-btn:hover {
   padding: 30px;
 }
 
+canvas {
+  width: 100% !important;
+  height: 320px !important;
+  display: block;
+  border-radius: 12px;
+  background: linear-gradient(180deg, rgba(10,20,40,0.6), rgba(2,6,18,0.6));
+  padding: 12px;
+}
+
 .graph-line.large {
   position: absolute;
   left: 7%;

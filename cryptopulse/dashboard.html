@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CryptoPulse — Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand">
+          <div class="logo-ring"><span class="logo-letter">C</span></div>
+          <div>
+            <p class="brand-name">CryptoPulse</p>
+            <span class="brand-tag">Real-time crypto intelligence</span>
+          </div>
+        </div>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="dashboard.html">Dashboard</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="analytics.html">Analytics</a>
+        </nav>
+        <div class="nav-actions">
+          <button class="outline-btn">Sign In</button>
+          <button class="primary-btn">Get Started</button>
+        </div>
+      </header>
+
+      <main>
+        <section class="section-full">
+          <div class="section-header">
+            <div>
+              <h2>Portfolio Dashboard</h2>
+              <p>One view for holdings, performance, and market trends.</p>
+            </div>
+            <button class="secondary-btn">Refresh Data</button>
+          </div>
+
+          <div class="dashboard-panels">
+            <div class="panel graph-panel">
+              <div class="panel-top">
+                <h3>Market Trend</h3>
+                <span>7-day snapshot</span>
+              </div>
+              <canvas id="marketTrendChart"></canvas>
+            </div>
+
+            <div class="panel list-panel">
+              <div class="panel-top">
+                <h3>Allocation</h3>
+                <span>Portfolio distribution</span>
+              </div>
+              <canvas id="allocationChart"></canvas>
+            </div>
+          </div>
+
+          <div class="dashboard-grid" style="margin-top:24px;">
+            <article class="stat-card">
+              <span class="card-title">Total Balance</span>
+              <strong>$128,452.00</strong>
+              <p>Up 12.4% this week</p>
+            </article>
+            <article class="stat-card">
+              <span class="card-title">Active Assets</span>
+              <strong>16 Coins</strong>
+              <p>Including BTC, ETH, SOL, ADA</p>
+            </article>
+            <article class="stat-card accent-card">
+              <span class="card-title">Projected Growth</span>
+              <strong>+18.9%</strong>
+              <p>AI-driven projection for 30 days</p>
+            </article>
+            <article class="stat-card">
+              <span class="card-title">Risk Score</span>
+              <strong>Moderate</strong>
+              <p>Balanced exposure with strong upside</p>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CryptoPulse — Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand">
+          <div class="logo-ring"><span class="logo-letter">C</span></div>
+          <div>
+            <p class="brand-name">CryptoPulse</p>
+            <span class="brand-tag">Real-time crypto intelligence</span>
+          </div>
+        </div>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="dashboard.html">Dashboard</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="analytics.html">Analytics</a>
+        </nav>
+        <div class="nav-actions">
+          <button class="outline-btn">Sign In</button>
+          <button class="primary-btn">Get Started</button>
+        </div>
+      </header>
+
+      <main>
+        <section class="section-full">
+          <div class="section-header">
+            <div>
+              <h2>Portfolio Overview</h2>
+              <p>Holdings, allocation, and value distribution.</p>
+            </div>
+            <button class="secondary-btn">View All Assets</button>
+          </div>
+
+          <div class="portfolio-panel">
+            <div class="portfolio-info">
+              <div class="allocation-card">
+                <h3>Allocation</h3>
+                <canvas id="portfolioAllocation"></canvas>
+              </div>
+              <div class="holding-cards">
+                <div class="holding-card">
+                  <div class="holding-icon btc">B</div>
+                  <div>
+                    <span>Bitcoin</span>
+                    <strong>45%</strong>
+                  </div>
+                </div>
+                <div class="holding-card">
+                  <div class="holding-icon eth">E</div>
+                  <div>
+                    <span>Ethereum</span>
+                    <strong>28%</strong>
+                  </div>
+                </div>
+                <div class="holding-card">
+                  <div class="holding-icon sol">S</div>
+                  <div>
+                    <span>Solana</span>
+                    <strong>14%</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-table-card">
+              <div class="panel-top">
+                <h3>Asset Breakdown</h3>
+                <span>Current holdings and performance</span>
+              </div>
+              <table class="portfolio-table">
+                <thead>
+                  <tr>
+                    <th>Coin</th>
+                    <th>Holdings</th>
+                    <th>Value</th>
+                    <th>Change</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="coin-dot btc"></span><strong>Bitcoin</strong></td>
+                    <td>1.84 BTC</td>
+                    <td>$127,000</td>
+                    <td class="text-green">+4.8%</td>
+                  </tr>
+                  <tr>
+                    <td><span class="coin-dot eth"></span><strong>Ethereum</strong></td>
+                    <td>24.1 ETH</td>
+                    <td>$90,400</td>
+                    <td class="text-green">+3.2%</td>
+                  </tr>
+                  <tr>
+                    <td><span class="coin-dot sol"></span><strong>Solana</strong></td>
+                    <td>582 SOL</td>
+                    <td>$109,400</td>
+                    <td class="text-red">-2.1%</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>
